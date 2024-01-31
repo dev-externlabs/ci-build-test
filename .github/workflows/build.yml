@@ -8,6 +8,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -17,7 +20,16 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-      - run: npm ci
+
+      - name: Installing Dependencies
+        run: npm ci
 
       - name: Create Build
         run: CI=false npm run build
+
+      - name: Deploy
+        uses: reggionick/s3-deploy@v4
+        with:
+          folder: build
+          bucket: ci-build-test
+          bucket-region: ap-south-1
