@@ -1,0 +1,23 @@
+name: Build deploy
+
+on:
+  push:
+    branches: ["User_Management"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      - run: npm ci
+
+      - name: Create Build
+        run: npm run build

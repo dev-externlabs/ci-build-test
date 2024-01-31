@@ -1,0 +1,170 @@
+
+.headerbar{
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    border-bottom: 1px solid #E3E8EE;
+
+}
+
+.headerbar > .rightpart {
+    display: flex;
+    align-items: center;
+
+}
+
+.headerbar > .rightpart > .notifybar {
+    margin-right: 15px;
+    position: relative;
+}
+
+.headerbar > .rightpart > .notifybar > span {
+    position:absolute;
+    top: -2px;
+    right: -1px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FF5959 0%, #EF2C2C 100%);
+}
+
+.headerbar > .rightpart > .notifyque {
+    margin-right: 15px;
+}
+
+.headerbar > .rightpart > .usericon { 
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.headerbar > .rightpart > .usericon > img {
+    width: 100%;
+    border-radius: 50%;    
+}
+
+.contentpart {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 66px);
+}
+
+.contentpart > .sidebar {
+    width: 55px;
+    background: #141834;
+    padding: 15px;
+}
+.contentpart > .sidebar > .menubtn  {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.menulist{
+    margin-top: 65px;
+}
+.menulist > li {
+    margin-top: 25px;
+}
+
+.contentpart > .rightpart { 
+    width: calc(100% - 55px);
+    padding: 24px;
+    height: calc(100vh - 66px);
+    overflow: auto;
+}
+
+
+.box{
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFF;   
+}
+
+.createloc-box h2  {
+    border-radius: 10px 10px 0px 0px;
+    background: #141834;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+    padding: 14px 36px;
+    margin-bottom: 27px;
+}
+
+.createloc-box  .createlocinputs {
+    padding: 25px 35px;
+}
+
+.createlocinputs label {
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+
+.createlocinputs .form-control { 
+    background-color: #fff;
+    box-shadow: 0px 4px 62px rgba(153, 171, 198, 0.18);
+    border: none;
+    font-size: 14px;
+    color: rgba(13, 1, 64, 0.60);
+    font-family: Arial;
+    padding: 11px 17px;
+}
+.cancel-btn{
+    border: none;
+    border-radius: 6px;
+   background-color: #DC4C2B;
+   padding: 6px 14px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.continue-btn{
+    border: none;
+    border-radius: 6px;
+   background-color: #397AF2;
+   padding: 6px 14px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/******************************    scrollbar css  ******************************************/
+
+.contentpart > .rightpart::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contentpart > .rightpart::-webkit-scrollbar-thumb {
+    background: #141834;
+    border-radius: 10px;
+}
+
+
+
+/******************************    scrollbar css  ******************************************/
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
