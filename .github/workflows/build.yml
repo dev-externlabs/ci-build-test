@@ -2,7 +2,7 @@ name: Build deploy
 
 on:
   push:
-    branches: ["User_Management"]
+    branches: ["main"]
 
 jobs:
   build:
